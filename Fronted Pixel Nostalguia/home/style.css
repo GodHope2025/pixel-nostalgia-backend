@@ -1,0 +1,163 @@
+body {
+    background-image: url(../imagens/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    max-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+
+}
+
+
+.navbar {
+    background-color: #363336; 
+    padding: 10px 0; 
+}
+
+
+.navbar ul {
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    display: flex;
+    justify-content: flex-start; 
+    gap: 30px; 
+    padding-left: 20px; 
+}
+
+
+.navbar a {
+    text-decoration: none; 
+    color: #1a1515; 
+    font-size: 1.2em; 
+    font-weight: 500; 
+    padding: 5px; 
+    transition: color 0.3s; 
+}
+
+
+.navbar a:hover {
+    color: #d1d1d1; 
+}
+
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    padding-top: 50px; 
+    color: white;
+}
+
+
+.titulo-pixel {
+    font-size: 5em; 
+    color: #ff00ff; 
+    text-shadow: 4px 4px #00ffff; 
+    margin-bottom: 30px;
+    font-family: monospace; 
+}
+
+.caja-inicio {
+    max-width: 650px;
+    padding: 40px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    border: 3px solid #ff00ff; 
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.5);
+    margin-bottom: 50px;
+}
+
+.subtitulo-caja {
+    font-size: 2.2em;
+    color: #00ffff; 
+    margin-top: 0;
+}
+
+.texto-caja {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+
+.btn-catalogo {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff00ff; 
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.2em;
+    border: 2px solid white;
+    transition: background-color 0.3s;
+}
+
+.btn-catalogo:hover {
+    background-color: #00ffff; 
+    color: black;
+}
+
+
+.juegos-destacados {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 1000px; 
+}
+
+.tarjeta-destacada {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    overflow: hidden; 
+    width: 45%; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+.juego-portada {
+    width: 120px; 
+    height: auto;
+    display: block;
+}
+
+.juego-info {
+    padding: 15px;
+}
+
+.juego-info h3 {
+    font-size: 1.3em;
+    color: #00ffff;
+    margin-top: 0;
+}
+
+.juego-info p {
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+.botones-destacados {
+    margin-top: 10px;
+}
+
+.btn-secundario {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #ff00ff; 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+}
+
+.btn-secundario:hover {
+    background-color: #e000e0;
+}

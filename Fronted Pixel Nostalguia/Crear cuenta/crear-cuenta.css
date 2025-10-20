@@ -1,0 +1,190 @@
+
+body {
+
+    background-image: url(../imagens/fondo1.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 100vh; 
+    margin: 0;
+    
+    /* Fuente de pixel art para todo el cuerpo */
+    font-family: 'Press Start 2P', cursive, monospace; 
+    color: #ecf0f1; /* Blanco suave */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+/* --------------------
+    BARRA DE NAVEGACIÓN (adaptada a tu estilo original)
+   -------------------- */
+.navbar {
+    background-color: rgba(2, 9, 10, 0.8); /* Fondo semitransparente oscuro */
+    padding: 10px 0; 
+    width: 100%; 
+    box-shadow: 0 0 10px rgba(221, 243, 20, 0.5); /* Sombra neón cian */
+}
+
+.navbar ul {
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    display: flex;
+    justify-content: flex-start; 
+    gap: 30px; 
+    padding-left: 20px; 
+}
+
+.navbar a {
+    text-decoration: none; 
+    color: #1ad3d3; /* Cian neón para los enlaces */
+    font-size: 1em; /* Un poco más pequeño para que se ajuste mejor */
+    font-weight: 500; 
+    padding: 5px; 
+    transition: color 0.3s, text-shadow 0.3s; 
+}
+
+.navbar a:hover {
+    color: #ff00ff; /* Magenta neón al pasar el ratón */
+    text-shadow: 0 0 8px #ff00ff; /* Efecto de brillo */
+}
+
+
+/* --------------------
+    CONTENEDOR DEL FORMULARIO DE REGISTRO
+   -------------------- */
+.registro-contenedor {
+    background-color: rgba(0, 0, 0, 0.85); /* Fondo casi negro y semitransparente */
+    padding: 40px;
+    border-radius: 8px;
+    
+    /* Borde y sombra neón como la imagen de referencia */
+    border: 2px solid #00ffff; /* Borde cian */
+    box-shadow: 
+        0 0 15px #00ffff, /* Brillo exterior cian */
+        0 0 25px rgba(0, 255, 255, 0.4), /* Sombra más difusa cian */
+        inset 0 0 10px #00ffff; /* Brillo interior cian */
+        
+    width: 90%;
+    max-width: 450px; /* Un poco más ancho que antes para el estilo */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.registro-contenedor h2 {
+    color: #ff00ff; /* Título magenta neón */
+    margin-bottom: 15px;
+    font-size: 2em; /* Más grande */
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px rgba(255, 0, 255, 0.6); /* Brillo neón */
+}
+
+.subtitulo-formulario {
+    color: #bdc3c7; /* Texto gris claro */
+    font-size: 0.9em;
+    margin-bottom: 30px;
+}
+
+/* --------------------
+    ELEMENTOS DEL FORMULARIO
+   -------------------- */
+.campo-formulario {
+    margin-bottom: 25px; /* Más espacio entre campos */
+    text-align: left;
+}
+
+.campo-formulario label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    color: #00ffff; /* Cian neón para las etiquetas */
+    text-shadow: 0 0 5px #00ffff; /* Brillo para las etiquetas */
+}
+
+.campo-formulario input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #00ffff; /* Borde cian */
+    border-radius: 4px; /* Ligeramente más redondeado */
+    background-color: rgba(30, 30, 30, 0.9); /* Fondo oscuro para los inputs */
+    color: #ecf0f1; /* Texto blanco dentro del input */
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: inherit; /* Hereda la fuente de pixel */
+    text-shadow: none; /* Asegura que el texto dentro del input no tenga sombra */
+}
+
+.campo-formulario input::placeholder {
+    color: rgba(236, 240, 241, 0.6); /* Placeholder más transparente */
+}
+
+.campo-formulario input:focus {
+    border-color: #ff00ff; /* Magenta neón al enfocar */
+    box-shadow: 0 0 8px #ff00ff; /* Brillo neón al enfocar */
+    outline: none;
+}
+
+/* Estilo para el botón "Registrarse" */
+.boton-pixel {
+    background-color: #f1c40f; /* Amarillo brillante */
+    color: #363336; /* Texto oscuro */
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2em; /* Texto más grande en el botón */
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 25px;
+    transition: transform 0.1s, box-shadow 0.1s, background-color 0.2s;
+    
+    /* Sombra para el efecto de botón flotante/presionable */
+    box-shadow: 
+        0 6px 0 #e67e22, /* Sombra inferior naranja */
+        0 0 15px rgba(241, 196, 15, 0.8); /* Brillo amarillo */
+    transform: translateY(0);
+}
+
+.boton-pixel:hover {
+    background-color: #f39c12; /* Naranja-amarillo al pasar el ratón */
+    box-shadow: 
+        0 6px 0 #d35400, /* Sombra inferior más oscura */
+        0 0 20px rgba(241, 196, 15, 1); /* Brillo más intenso */
+}
+
+.boton-pixel:active {
+    box-shadow: 0 2px 0 #d35400; /* Sombra más pequeña al presionar */
+    transform: translateY(4px); /* Botón se hunde */
+}
+
+/* Enlaces secundarios (Ya tienes cuenta? / Olvidé mi código) */
+.enlace-secundario {
+    margin-top: 30px;
+    font-size: 0.8em;
+    display: flex; /* Para poner los enlaces en línea si son más de uno */
+    justify-content: space-around; /* Espacio entre ellos */
+    width: 100%;
+    flex-wrap: wrap; /* Para que se ajusten en móviles */
+    gap: 10px; /* Espacio entre enlaces */
+}
+
+.enlace-secundario a {
+    color: #ff00ff; /* Magenta neón para los enlaces secundarios */
+    text-decoration: none;
+    text-shadow: 0 0 5px #ff00ff; /* Brillo neón */
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.enlace-secundario a:hover {
+    color: #00ffff; /* Cian neón al pasar el ratón */
+    text-shadow: 0 0 8px #00ffff;
+    text-decoration: underline;
+}
+
+/* Pequeños ajustes para la tipografía pixelada */
+h2, label, .boton-pixel {
+    letter-spacing: 2px; /* Espaciado entre letras para mejor lectura en fuentes pixel */
+}

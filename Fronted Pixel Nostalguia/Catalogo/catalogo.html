@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo de juegos</title>
+    <link rel="stylesheet" href="catalogo.css">
+</head>
+<body>
+    <nav class="navbar">
+    <ul>
+        <li><a href="../home/index.html">Inicio</a></li>
+        <li><a href="../Catalogo/catalogo.html">Catálogo</a></li>
+        <li><a href="../informacion/informacion.html">Informacion del juego</a></li>
+        <li><a href="../Crear cuenta/Crear-cuenta.html">Crear cuenta</a></li>
+        <li><a href="../Login/login.html">Iniciar Sesión</a></li> 
+    </ul>
+    </nav>
+
+
+    <main class="seccion-catalogo">
+    
+    <h1 class="titulo-catalogo">BIENVENIDO AL CATÁLOGO Pixel Nostalgia: ¡Elige tu Aventura!</h1>
+    <p class="descripcion-catalogo">Explora nuestra biblioteca de juegos Arcade y PC que marchen de era.</p>
+
+    <div class="controles-catalogo">
+        <label for="search">Filtros</label>
+        <div class="caja-filtros">
+            <input type="text" id="search" placeholder="Search" class="input-search">
+            <div class="botones-categoria">
+                <button class="btn-filtro activo">PC</button>
+                <button class="btn-filtro">ARCADE</button>
+                <button class="btn-filtro">LUCHA</button>
+                <button class="btn-filtro">PLATAFORMAS</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="catalogo-grid">
+        
+        <div class="producto-card">
+            <img src="/imagens/pacman.jpg" alt="PAC-MAN" class="card-imagen">
+            <h3 class="card-titulo">PAC-MAN</h3>
+            <p class="card-meta">ARCADE | 🕹️ 1980</p>
+            <a href="https://www.pacmangratis.net/" class="btn-ficha" target="_blank">JUGAR AQUÍ YA</a>
+        </div>
+
+        <div class="producto-card">
+            <img src="/imagens/metal.jpg" alt="METAL SLUG" class="card-imagen">
+            <h3 class="card-titulo">METAL SLUG</h3>
+            <p class="card-meta">NEO-GEO | 🎮 1996</p>
+            <a href="https://www.minijuegos.com/juego/metal-slug-x" class="btn-ficha" target="_blank">JUGAR AQUÍ YA</a>
+        </div>
+    
+        <div class="producto-card">
+            <img src="/imagens/super-mario-bros-3.jpg" alt="SUPER MARIO BROS. 3" class="card-imagen">
+            <h3 class="card-titulo">SUPER MARIO 3</h3>
+            <p class="card-meta">NES | 🍄 1988</p>
+            <a href="https://juegos.games/juego/super-mario-bros-3" class="btn-ficha" target="_blank">JUGAR AQUÍ YA</a>
+        </div>
+        
+        <div class="producto-card">
+            <img src="/imagens/nave.avif"SPACE INVADERS" class="card-imagen">
+            <h3 class="card-titulo">SPACE INVADERS</h3>
+            <p class="card-meta">ARCADE | 👾 1978</p>
+            <a href="https://freeinvaders.org/#google_vignette" class="btn-ficha" target="_blank">JUGAR AQUÍ YA</a>
+        </div>
+        
+    </div>
+    
+    <div class="paginacion">
+        <a href="#" class="btn-pagina">« ANTERIOR</a>
+        <span class="numero-pagina activo">1</span>
+        <a href="#" class="btn-pagina">SIGUIENTE »</a>
+    </div>
+</main>
+
+<script src="catalogo.js"></script>
+</body>
+</html>

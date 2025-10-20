@@ -1,0 +1,136 @@
+body {
+    background-image: url(../imagens/fondo1.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    max-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+
+}
+
+
+.navbar {
+    background-color: #363336; 
+    padding: 10px 0; 
+}
+
+
+.navbar ul {
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    display: flex;
+    justify-content: flex-start; 
+    gap: 30px; 
+    padding-left: 20px; 
+}
+
+
+.navbar a {
+    text-decoration: none; 
+    color: #1a1515; 
+    font-size: 1.2em; 
+    font-weight: 500; 
+    padding: 5px; 
+    transition: color 0.3s; 
+}
+
+
+.navbar a:hover {
+    color: #d1d1d1; 
+
+}.seccion-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; 
+    padding: 20px;
+}
+
+.caja-login-arcade {
+    max-width: 450px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: rgba(10, 10, 30, 0.95); 
+    border: 3px solid #00ffff; 
+    box-shadow: 0 0 15px #00ffff, 0 0 25px rgba(0, 255, 255, 0.3); 
+    text-align: center;
+}
+
+.titulo-login-arcade {
+    font-size: 2.2em;
+    color: #ff00ff; 
+    text-shadow: 0 0 5px #ff00ff, 0 0 15px rgba(255, 0, 255, 0.7);
+    margin-bottom: 5px;
+}
+
+.subtitulo-login {
+    color: #ffd700; 
+    margin-bottom: 25px;
+    font-size: 1.1em;
+}
+
+.formulario-login {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.formulario-login label {
+    font-weight: bold;
+    color: #00ff00; 
+    margin-top: 5px;
+}
+
+.formulario-login input[type="text"],
+.formulario-login input[type="password"] {
+    padding: 12px;
+    border: 2px solid #00ff00; 
+    border-radius: 4px;
+    background-color: #1a1a1a; 
+    color: white;
+    font-size: 1em;
+    box-shadow: 0 0 8px rgba(0, 255, 0, 0.5); 
+}
+
+
+.btn-login-arcade {
+    padding: 15px;
+    background-color: #ffd700; 
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 25px;
+    box-shadow: 0 5px 0 #a08c00; 
+    transition: all 0.1s;
+}
+
+.btn-login-arcade:active {
+    box-shadow: 0 1px 0 #a08c00; 
+    transform: translateY(4px);
+}
+
+.opciones-login {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.opciones-login a {
+    color: #00ffff; 
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.opciones-login a:hover {
+    color: #ffffff;
+    }

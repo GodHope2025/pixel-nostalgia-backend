@@ -1,0 +1,464 @@
+body {
+    background-image: url(../imagens/fondo1.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    max-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+
+}
+
+
+.navbar {
+    background-color: #363336; 
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px; 
+    padding-left: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff; 
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #d1d1d1; 
+}
+
+
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    padding-top: 50px; 
+    color: white;
+}
+
+.titulo-pixel {
+    font-size: 5em; 
+    color: #ff00ff; 
+    text-shadow: 4px 4px #00ffff; 
+    margin-bottom: 30px;
+    font-family: monospace; 
+}
+
+
+.caja-inicio {
+    max-width: 650px;
+    padding: 40px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    border: 3px solid #ff00ff; 
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.5);
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.subtitulo-caja {
+    font-size: 2.2em;
+    color: #00ffff; 
+    margin-top: 0;
+}
+
+.texto-caja {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.btn-catalogo {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff00ff; 
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.2em;
+    border: 2px solid white;
+    transition: background-color 0.3s;
+}
+
+.btn-catalogo:hover {
+    background-color: #00ffff; 
+    color: black;
+}
+
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #ff00ff;
+}
+
+
+.juegos-destacados {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 1000px; 
+}
+
+.tarjeta-destacada {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    overflow: hidden; 
+    width: 45%; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+.juego-portada {
+    width: 120px; 
+    height: auto;
+    display: block;
+}
+
+.juego-info {
+    padding: 15px;
+}
+
+.juego-info h3 {
+    font-size: 1.3em;
+    color: #00ffff;
+    margin-top: 0;
+}
+
+.btn-secundario {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #ff00ff; 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+}
+
+.btn-secundario:hover {
+    background-color: #e000e0;
+}
+
+
+
+.seccion-catalogo {
+    max-width: 1300px;
+    margin: 40px auto; 
+    padding: 0 20px;
+    color: white;
+}
+
+.titulo-catalogo {
+    font-size: 2.8em;
+    color: #ffd700; 
+    text-align: left;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+
+.controles-catalogo {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.controles-catalogo label {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #ff00ff; 
+    display: block;
+    margin-bottom: 5px;
+}
+
+.caja-filtros {
+    display: flex;
+    gap: 20px; 
+}
+
+.input-search {
+    padding: 10px;
+    width: 250px;
+    border: 2px solid #00ffff; 
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.botones-categoria {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-filtro {
+    padding: 10px 15px;
+    border: 2px solid #ff00ff;
+    background-color: rgba(255, 0, 255, 0.2);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+
+.btn-filtro.activo, .btn-filtro:hover {
+    background-color: #ff00ff; 
+    box-shadow: 0 0 10px #ff00ff;
+}
+
+
+.catalogo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+    gap: 30px;
+    padding-top: 20px;
+}
+
+.producto-card {
+    width: 200px; 
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+.card-imagen {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.card-titulo {
+    font-size: 1.2em;
+    color: #00ffff; 
+    margin: 5px 0;
+}
+
+.card-meta {
+    font-size: 0.9em;
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+.btn-ficha {
+    display: block;
+    padding: 8px 0;
+    background-color: #ffd700; 
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.btn-ficha:hover {
+    background-color: #e0b000;
+}
+
+
+.paginacion {
+    margin-top: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-pagina, .numero-pagina {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #00ffff;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.numero-pagina.activo, .btn-pagina:hover {
+    background-color: #00ffff; 
+    color: black;
+}
+
+
+.seccion-comentarios {
+    max-width: 700px;
+    margin: 40px auto; 
+    padding: 20px;
+    color: white; 
+    text-align: center;
+}
+
+.titulo-high-score {
+    font-size: 3em;
+    color: #ffd700; 
+    text-shadow: 0 0 10px rgba(255, 255, 0, 0.8), 0 0 20px rgba(255, 100, 0, 0.5); /* Efecto neón amarillo */
+    margin-bottom: 20px;
+}
+
+.caja-formulario-arcade {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgba(10, 10, 30, 0.9); 
+    border: 3px solid #00ffff; 
+    box-shadow: 0 0 15px #00ffff; 
+}
+
+.texto-intro {
+    background-color: #333; 
+    padding: 10px;
+    border-radius: 5px;
+    font-style: italic;
+    margin-bottom: 25px;
+    color: #00ff00; 
+}
+
+.subtitulo-arcade {
+    font-size: 1.5em;
+    color: white;
+    padding-bottom: 10px;
+    border-bottom: 2px dashed rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+}
+
+.formulario-arcade {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+    text-align: left; 
+    padding: 0 10px;
+}
+
+.formulario-arcade label {
+    font-weight: bold;
+    color: #ff00ff; 
+    margin-top: 10px;
+}
+
+.formulario-arcade input[type="text"],
+.formulario-arcade textarea {
+    padding: 10px;
+    border: 2px solid #00ff00; 
+    border-radius: 4px;
+    background-color: #1a1a1a; 
+    color: white;
+    font-size: 1em;
+    box-shadow: 0 0 8px rgba(0, 255, 0, 0.5); 
+}
+
+.btn-enviar-arcade {
+    padding: 15px;
+    background-color: #ffd700; 
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 25px;
+    box-shadow: 0 5px 0 #a08c00; 
+    transition: all 0.1s;
+}
+
+.btn-enviar-arcade:active {
+    box-shadow: 0 1px 0 #a08c00; 
+    transform: translateY(4px);
+}
+
+.seccion-informacion {
+    max-width: 1000px;
+    margin: 40px auto; 
+    padding: 0 20px;
+    color: white;
+}
+
+.titulo-principal-info {
+    font-size: 2.5em;
+    text-align: center;
+    color: #ff00ff; 
+    text-shadow: 0 0 5px rgba(255, 0, 255, 0.8), 0 0 10px rgba(255, 0, 255, 0.5); 
+    margin-bottom: 5px;
+}
+
+.subtitulo-info {
+    font-size: 1.1em;
+    color: #ccc;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.detalle-juego {
+    margin-bottom: 40px; 
+}
+
+.info-contenedor {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.75); 
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+.titulo-juego-detalle {
+    font-size: 2.2em;
+    text-align: center; 
+    color: #ffd700; 
+    text-shadow: 0 0 5px #ffd700, 0 0 10px rgba(255, 215, 0, 0.5);
+    border-bottom: 2px solid #ffd700;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+.seccion-texto h2 {
+    font-size: 1.8em;
+    color: #00ffff; 
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.seccion-texto p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.datos-clave {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 25px;
+}
+
+.datos-clave li {
+    font-size: 1.1em;
+    padding: 5px 0;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+}
+
+.datos-clave li strong {
+    color: #00ffaa;
+    font-weight: bold;
+}

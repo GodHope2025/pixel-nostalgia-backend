@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Pixel Nostalgia</title>
+    <link rel="stylesheet" href="login.css"> 
+</head>
+<body>
+    
+    <nav class="navbar">
+    <ul>
+        <li><a href="../home/index.html">Inicio</a></li>
+        <li><a href="../Catalogo/catalogo.html">Catálogo</a></li>
+        <li><a href="../informacion/informacion.html">Informacion del juego</a></li>
+        <li><a href="../Crear cuenta/Crear-cuenta.html">Crear cuenta</a></li>
+        <li><a href="../Login/login.html">Iniciar Sesión</a></li> 
+    </nav>
+
+    <main class="seccion-login">
+        
+        <div class="caja-login-arcade">
+            
+            <h1 class="titulo-login-arcade">(LOGIN)</h1>
+            <p class="subtitulo-login">Accede a tu cuenta de Jugador.</p>
+
+            <form action="#" method="POST" class="formulario-login">
+                
+                <label for="usuario">NOMBRE DE JUGADOR:</label>
+                <input type="text" id="usuario" name="usuario" placeholder="Ingresa tu usuario" required>
+                
+                <label for="password">CÓDIGO SECRETO (Password):</label>
+                <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+                
+                                <p id="error-message" style="color: red; display: none; text-align: center; margin-top: 10px;"></p>
+                
+                <button type="submit" class="btn-login-arcade">Iniciar sesion</button>
+                
+                <div class="opciones-login">
+                    <a href="#" class="link-registro">¿No tienes cuenta? Regístrate aquí</a>
+                    <a href="#" class="link-olvido">Olvidé mi Código Secreto</a>
+                </div>
+            </form>
+
+        </div>
+    </main>
+
+        <script src="login.js"></script>
+
+</body>
+</html>
